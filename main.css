@@ -3016,6 +3016,10 @@ html.no-csstransitions .hero-content {
   background-image: url(../images/icons/social/icon-instagram.svg);
 }
 
+.social-list__icon--tiktok::before {
+  background-image: url(../images/icons/social/icon-tiktok.png);
+}
+
 .social-list__icon--email::before {
   background-image: url(../images/icons/social/icon-email.svg);
 }
@@ -3126,7 +3130,7 @@ html.no-csstransitions .hero-content {
  * ## footer logo 
  * ------------------------------------------------------------------- */
 .footer-logo {
-  margin-bottom: 2.8rem;
+  margin-bottom: 0rem;
 }
 
 .footer-logo a {
@@ -3338,7 +3342,7 @@ html.no-csstransitions .hero-content {
 }
 
 .page-header--about {
-  background-image: url(../images/header-bgs/about-header.png);
+  background-image: url(../images/header-bgs/about-header.jpg);
 }
 
 .page-header--contact {
