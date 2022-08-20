@@ -3130,13 +3130,13 @@ html.no-csstransitions .hero-content {
  * ## footer logo 
  * ------------------------------------------------------------------- */
 .footer-logo {
-  margin-bottom: 0rem;
+  margin-bottom: 2.8rem;
 }
 
 .footer-logo a {
   display: block;
-  height: 150px;
-  width: 150px;
+  height: 40%;
+  width: 40%;
 }
 
 .footer-logo img {
