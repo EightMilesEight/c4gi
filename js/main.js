@@ -44,6 +44,16 @@
     };
 
 
+   /* Quick Exit
+    * -------------------------------------------------- */
+
+		window.addEventListener('click', function (event) {
+		    if (event.detail === 3) {
+			window.location.replace("http://google.com");
+		    }
+                });
+
+
    /* Mobile Menu
     * ---------------------------------------------------- */ 
     const ssMobileMenu = function() {

@@ -47,7 +47,10 @@
  *    ## series image
  *    ## series content
  *    ## series buttons
- *    ## series subscribe
+ *    ## series support
+ *  # keeping up with the queers
+ *    ## keeping up with the queers subscribe
+ *    ## keeping up with the queers content right
  *  # social
  *  # footer
  *    ## footer logo
@@ -1378,13 +1381,25 @@ input::-moz-focus-inner {
  * ## alert box
  * ------------------------------------------------------------------- */
 .alert-box {
-  padding: 2.4rem 4rem 2.4rem 3.2rem;
-  position: relative;
-  margin-bottom: 3.2rem;
-  border-radius: 3px;
+  z-index: 400;
+  padding: 3.5rem 9rem 0rem 3.5rem;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
   font-family: "Open Sans", sans-serif;
-  font-weight: 600;
-  font-size: 1.5rem;
+  font-weight: 400;
+  font-size: 1.7rem;
+  line-height: 1.6;
+  max-width: 50rem;
+  min-height: 20rem;
+}
+
+.alert-box span, .span {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 2.5rem;
   line-height: 1.6;
 }
 
@@ -1403,7 +1418,7 @@ input::-moz-focus-inner {
   content: '';
   position: absolute;
   display: inline-block;
-  width: 2px;
+  width: 2.5px;
   height: 12px;
   top: 0;
   left: 5px;
@@ -1458,6 +1473,7 @@ input::-moz-focus-inner {
 .alert-box--notice .alert-box__close::after {
   background-color: #827217;
 }
+
 
 /* -------------------------------------------------------------------
  * ## pagination
@@ -2083,6 +2099,7 @@ input::-moz-focus-inner {
 .no-js .s-hero {
   background: #F9F7F3;
 }
+
 
 /* -------------------------------------------------------------------
  * ## hero left bar
@@ -2842,7 +2859,7 @@ html.no-csstransitions .hero-content {
 }
 
 /* ------------------------------------------------------------------- 
- * ## series subscribe 
+ * ## series support
  * ------------------------------------------------------------------- */
 .series-support__description {
   font-family: "Open Sans", sans-serif;
@@ -2929,6 +2946,134 @@ html.no-csstransitions .hero-content {
   .series-content .column:first-child,
   .series-content .column:last-child {
     padding: 0;
+  }
+
+}
+
+/* ===================================================================
+ * # call for educators
+ *
+ * ------------------------------------------------------------------- */
+.s-call-for-educators {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: #EDDEA4;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.s-call-for-educators p, .p{
+  color: #0FA3B1;
+  font-weight: 350;
+}
+
+
+/* ===================================================================
+ * # keeping up with the queers
+ *
+ * ------------------------------------------------------------------- */
+.s-keeping-up-with-the-queers {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: #B5E2FA;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.s-keeping-up-with-the-queers img, .img{
+}
+
+.s-keeping-up-with-the-queers h1, .h1{
+  color: #F7A072;
+  margin-top: 0;
+}
+
+.s-keeping-up-with-the-queers p, .p{
+  color: #0FA3B1;
+}
+
+
+
+
+/* ------------------------------------------------------------------- 
+ * ## keeping up with the queers subscribe 
+ * ------------------------------------------------------------------- */
+.keeping-up-with-the-queers-content__subscribe {
+  font-family: "Open Sans", sans-serif;
+  font-size: 2.5rem;
+  line-height: 1.4;
+  padding: 0 4rem;
+  color: rgba(255, 255, 255, 1);
+  text-align: center;
+}
+
+.keeping-up-with-the-queers-content__subscribe-links {
+  list-style: none;
+  display: block;
+  margin: 0;
+  text-align: center;
+}
+
+.keeping-up-with-the-queers-content__subscribe-links li {
+  display: inline-block;
+  padding-left: 0;
+  line-height: 1;
+}
+
+.keeping-up-with-the-queers-content__subscribe-links a {
+  display: block;
+  height: 3.8rem;
+  width: 3.8rem;
+  margin: 0 1.2rem 1.2rem;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  font: 0/0 a;
+  text-shadow: none;
+  color: transparent;
+}
+
+.keeping-up-with-the-queers-content__subscribe-links .ss-apple-podcast a {
+  background-image: url(../images/icons/keeping-up-with-the-queers/icon-apple.svg);
+}
+
+.keeping-up-with-the-queers-content__subscribe-links .ss-spotify a {
+  background-image: url(../images/icons/keeping-up-with-the-queers/icon-spotify.svg);
+}
+
+.keeping-up-with-the-queers-content__subscribe-links .ss-soundcloud a {
+  background-image: url(../images/icons/keeping-up-with-the-queers/icon-soundcloud.svg);
+}
+
+.keeping-up-with-the-queers-content__subscribe-links .ss-youtube a {
+  background-image: url(../images/icons/keeping-up-with-the-queers/icon-youtube.svg);
+}
+
+
+/* -------------------------------------------------------------------
+ * ## keeping up with the queers content right
+ * ------------------------------------------------------------------- */
+.keeping-up-with-the-queers-content__right {
+  position: absolute;
+  right: 3rem;
+  bottom: 3.2rem;
+}
+
+
+/* ------------------------------------------------------------------- 
+ * responsive:
+ * keeping up with the queers
+ * ------------------------------------------------------------------- */
+
+@media screen and (max-width:1200px) {
+  .keeping-up-with-the-queers-content__right {
+    position: static;
+  }
+
+}
+
+@media screen and (max-width:800px) {
+  .keeping-up-with-the-queers-content__right .btn {
+    display: block;
+    margin-right: 0;
   }
 
 }
@@ -3350,12 +3495,12 @@ html.no-csstransitions .hero-content {
   background-image: url(../images/header-bgs/events-header.png);
 }
 
-.page-header--connect {
-  background-image: url(../images/header-bgs/connect-header-bg-2000.jpg);
-}
-
 .page-header--join-us {
   background-image: url(../images/header-bgs/join-us-header.jpg);
+}
+
+.page-header--call-for-educators {
+  background-image: url(../images/header-bgs/default-header.jpg);
 }
 
 .page-header__content {
